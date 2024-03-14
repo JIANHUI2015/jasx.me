@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import Link, { type LinkProps } from 'next/link'
 import React from 'react'
+import { SocialIcon } from 'react-social-icons'
 
 import {
   AtomIcon,
@@ -12,6 +13,7 @@ import {
   MailIcon,
   TelegramIcon,
   TwitterIcon,
+  XiaohongshuIcon,
   YouTubeIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
@@ -25,6 +27,7 @@ type Platform =
   | 'bilibili'
   | 'mail'
   | 'rss'
+  | 'xhs'
 type PlatformInfo = {
   icon: IconType
   platform: Platform
@@ -53,6 +56,7 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     label: '哔哩哔哩',
   },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
+  '(?:xhs:)': { icon: XiaohongshuIcon, platform: 'xhs', label: '小红书' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }
 
@@ -112,7 +116,12 @@ export function SocialLink({
             aria-label={info.label}
             {...props}
           >
-            <info.icon className="h-5 w-5 text-zinc-400 transition group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-200" />
+            <SocialIcon 
+              url={href}
+              label={info.label}
+            />
+            {/* <info.icon className="h-5 w-5 text-zinc-400 transition group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-200" /> */}
+
           </Link>
         </Tooltip.Trigger>
         <AnimatePresence>
