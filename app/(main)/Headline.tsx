@@ -1,17 +1,17 @@
 'use client'
 
 import { motion } from 'framer-motion'
-// import { PeekabooLink } from '~/components/links/PeekabooLink'
-// import { SocialLink } from '~/components/links/SocialLink'
 import { SocialIcon } from 'react-social-icons'
 import Balancer from 'react-wrap-balancer'
 
 import { SparkleIcon, UserSecurityIcon } from '~/assets'
+// import { PeekabooLink } from '~/components/links/PeekabooLink'
+// import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
   return (
     <span className="group">
-      <span className="font-mono">&lt;</span>开发者
+      <span className="font-mono">&lt;</span>Coder
       <span className="font-mono">/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
@@ -27,7 +27,7 @@ function Designer() {
         <span className="absolute -bottom-0.5 -left-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      全干工程师
+      
     </span>
   )
 }
@@ -36,7 +36,7 @@ function OCD() {
   return (
     <span className="group">
       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>一人公司</span>
+      <span>长期主义</span>
     </span>
   )
 }
@@ -83,8 +83,7 @@ export function Headline() {
         <Balancer>
           嗨，我是Jasper，一名移动开发工程师，目前在职，业余时间做自己的App。
           <br />
-          正在朝超级个体方向
-          梦想是做自己喜欢的事情，顺便把钱赚了。😄
+          正在朝超级个体方向发展，梦想是做自己喜欢的事情，顺便把钱赚了。😄
           {/* 我是 Cali，
           <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
           创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
