@@ -11,7 +11,7 @@ import { SparkleIcon, UserSecurityIcon } from '~/assets'
 function Developer() {
   return (
     <span className="group">
-      <span className="font-mono">&lt;</span>Coder
+      <span className="font-mono">&lt;</span>开发者
       <span className="font-mono">/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
@@ -27,7 +27,7 @@ function Designer() {
         <span className="absolute -bottom-0.5 -left-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      
+      斜杆青年
     </span>
   )
 }
